@@ -6,32 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="266dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-117dp"
-        android:layout_marginEnd="-4dp"
-        app:srcCompat="@drawable/head" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMovies"
         android:layout_width="match_parent"
-        android:layout_height="628dp"
+        android:layout_height="412dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="103dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="#FF0000"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp" />
+        android:background="#FF0000" />
 
 </RelativeLayout>

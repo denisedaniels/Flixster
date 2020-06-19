@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:background="@android:drawable/screen_background_dark">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -25,19 +28,25 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="@font/lalezar"
+        android:textAlignment="viewStart"
+        android:textColor="#FF0000"
         android:textSize="24sp"
         tools:text="The Last Days of American Crime" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
-        android:layout_height="132dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:paddingBottom="0dp"
+        android:textColor="#FFFFFF"
         tools:layout_marginStart="5dp"
         tools:text="Twelve strangers wake up in a clearing. They don't know where they are—or how they got there. In the shadow of a dark internet conspiracy theory, ruthless elitists gather at a remote location to hunt humans for sport. But their master plan is about to be derailed when one of the hunted turns the tables on her pursuers." />
 </RelativeLayout>
