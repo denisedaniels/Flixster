@@ -2,11 +2,14 @@ package com.example.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixster.models.Movie;
@@ -25,6 +28,8 @@ public class DetailActivity extends YouTubeBaseActivity {
 
     public static final String YOUTUBE_API_KEY= "AIzaSyCtqSbhxxnjSnhI3BLtha7ifdCvpAZHYwI";
     public static final String VIDEOS_URL= "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+
+    Context context;
 
     TextView tvTitle;
     TextView tvOverview;
@@ -54,6 +59,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         //Sets the rating and downcast the double to a float
         ratingBar.setRating((float)movie.getRating());
         tvDate.setText(movie.getDate());
+
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEOS_URL, movie.getMovieID()), new JsonHttpResponseHandler() {

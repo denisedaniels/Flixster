@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -71,7 +70,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             super(itemView);
             tvTitle= itemView.findViewById(R.id.tvTitle);
             tvOverview= itemView.findViewById(R.id.tvOverview);
-            ivPoster= itemView.findViewById(R.id.ivPoster);
+            ivPoster= itemView.findViewById(R.id.tvPoster);
             container= itemView.findViewById(R.id.container);
         }
 

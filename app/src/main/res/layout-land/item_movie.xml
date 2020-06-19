@@ -8,7 +8,7 @@
     android:background="#000000">
 
     <ImageView
-        android:id="@+id/ivPoster"
+        android:id="@+id/tvPoster"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -26,7 +26,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
-        android:layout_toEndOf="@+id/ivPoster"
+        android:layout_toEndOf="@+id/tvPoster"
         android:fontFamily="@font/lalezar"
         android:textColor="#FF0303"
         android:textSize="24sp"
@@ -41,7 +41,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
-        android:layout_toEndOf="@+id/ivPoster"
+        android:layout_toEndOf="@+id/tvPoster"
         android:textColor="#FFFFFF"
         tools:layout_marginStart="5dp"
         tools:text="Twelve strangers wake up in a clearing. They don't know where they are—or how they got there. In the shadow of a dark internet conspiracy theory, ruthless elitists gather at a remote location to hunt humans for sport. But their master plan is about to be derailed when one of the hunted turns the tables on her pursuers." />

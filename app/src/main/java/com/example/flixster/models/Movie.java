@@ -1,5 +1,7 @@
 package com.example.flixster.models;
 
+import android.graphics.drawable.Drawable;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,6 +22,7 @@ public class Movie {
     String overview;
     double rating;
     String date;
+    //String poster;
     //JSONArray genre;
     //String genres;
 
