@@ -13,11 +13,15 @@ import java.util.List;
 public class Movie {
 
     //Stores information related to the movie that can be obtained from the JSON object.
+    int movieID;
     String backdropPath;
     String posterPath;
     String title;
     String overview;
     double rating;
+    String date;
+    //JSONArray genre;
+    //String genres;
 
     //Empty constructor needed by the parceler library
     public Movie(){
@@ -31,6 +35,9 @@ public class Movie {
         title= jsonObject.getString("title");
         overview= jsonObject.getString("overview");
         rating=jsonObject.getDouble("vote_average");
+        date= jsonObject.getString("release_date");
+        movieID= jsonObject.getInt("id");
+        //genre= jsonObject.getJSONArray("genre_ids");
     }
 
     //Turns our JSON array into a list of movies
@@ -63,7 +70,9 @@ public class Movie {
         return overview;
     }
 
-    public double getRating() {
-        return rating;
-    }
+    public double getRating() { return rating; }
+
+    public String getDate() { return date; }
+
+    public int getMovieID() { return movieID; }
 }
